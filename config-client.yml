@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: db7001
+
+---
+spring:
+  profiles: db7001
+  application:
+    name: config-db7001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+
+---
+spring:
+  profiles: db7002
+  application:
+    name: config-db7002
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/

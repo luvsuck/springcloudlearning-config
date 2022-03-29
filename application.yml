@@ -1,15 +1,15 @@
 spring:
-	profiles:
-			active: dev  
-			
----
-spring: 
-	profiles: dev
-	application:
-		name: springcloudlearning-config-dev
+  profiles:
+    active: dev
 
 ---
-spring: 
-	profiles: test
-	application:
-		name: springcloudlearning-config-test
+spring:
+  profiles: dev
+  application:
+    name: config-dev
+
+---
+spring:
+  profiles: test
+  application:
+    name: config-test

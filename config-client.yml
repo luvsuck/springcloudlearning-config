@@ -7,6 +7,8 @@ spring:
   profiles: db7001
   application:
     name: config-db7001
+server:
+  port: 8201
 eureka:
   client:
     service-url:
@@ -17,6 +19,8 @@ spring:
   profiles: db7002
   application:
     name: config-db7002
+server:
+  port: 8202
 eureka:
   client:
     service-url:
